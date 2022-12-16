@@ -79,14 +79,14 @@ const Login = () => {
     try {
       dispatch({ type: "AUTH", data: { result, token } });
 
-      window.location.href = "/dashboard";
+      window.location.href = "/";
     } catch (error) {
       console.log(error);
     }
   };
 
   if (user) {
-    history.push("/dashboard");
+    history.push("/");
   }
 
   return (

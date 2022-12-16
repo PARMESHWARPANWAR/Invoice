@@ -10,7 +10,7 @@ export const signin =
 
       openSnackbar("Signin successfull");
 
-      window.location.href = "/dashboard";
+      window.location.href = "/";
     } catch (error) {
       openSnackbar(error?.response?.data?.message);
       setLoading(false);
@@ -33,7 +33,7 @@ export const signup =
         website: "",
       });
       dispatch({ type: CREATE_PROFILE, payload: info });
-      window.location.href = "/dashboard";
+      window.location.href = "/";
       openSnackbar("Sign up successfull");
     } catch (error) {
       console.log(error);
@@ -53,7 +53,7 @@ export const forgot = (formData) => async (dispatch) => {
 export const reset = (formData, history) => async (dispatch) => {
   try {
     await api.reset(formData);
-    history.push("/dashboard");
+    history.push("/");
   } catch (error) {
     alert(error);
   }
