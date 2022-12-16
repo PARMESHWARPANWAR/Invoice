@@ -5,7 +5,8 @@ REACT_APP_API = http://localhost:8000
 REACT_APP_URL = http://localhost:8080
 
 
-
+npm install
+npm run dev
 
 
 #server env
@@ -16,3 +17,6 @@ SMTP_HOST = "smtp.gmail.com"
 SMTP_PORT = 465
 SMTP_USER =                        #user mail id
 SMTP_PASS =                       #mail id password
+
+npm install
+npm start
