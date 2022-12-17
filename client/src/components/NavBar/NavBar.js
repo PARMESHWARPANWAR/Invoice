@@ -42,7 +42,7 @@ const NavBar = () => {
             </a>
           </li>
           <li className="nav-item">
-            <a href="/dashboard" className="nav-link">
+            <a href="/" className="nav-link">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
