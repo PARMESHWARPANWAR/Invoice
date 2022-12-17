@@ -33,7 +33,7 @@ function Chart({ paymentHistory }) {
       curve: "smooth",
     },
     xaxis: {
-      type: "datetime",
+      type: "string",
       categories: paymentDates,
     },
     tooltip: {
